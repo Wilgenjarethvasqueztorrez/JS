@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript y los fundamentos de POO</title>
+</head>
+<body>
+    <p id="nombre"></p>
+ <script>
+  
+ // Al cargar la pagina, mostrar el nombre
+ let parrafo = document.getElementById("nombre")
+ //parrafo.innerText = "Carlos Andres Perez"
+
+ // Crear un objeto en JS
+ let persona = {
+    nombre: "Willgen",
+    apellido: "Vasquez",
+    edad: 19,
+    nombreCompleto: function(){
+        return this.nombre + " " + this.apellido
+    }
+ }
+
+ // Mostrar el nombre completo
+ // Willgen tiene 19 años
+ parrafo.innerText = persona.nombreCompleto() + " tiene " + persona.edad + " años "
+ </script>
+
+</body>
+</html>
